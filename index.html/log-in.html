@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mc Zaldy Yap</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0101;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+       }
+       form{
+  border: 3px solid #f1f1f1;
+     }
+     button {
+  background-color: #053523;
+  color: white;
+  padding: 5px 5px;
+  margin: 100px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+     }
+     
+    </style>
+<body>
+    <!-- Login Page -->
+    <div class="form-box"> </div>
+    <div id="loginForm"> </div>
+        <h1>Login</h1>
+        <label for="username">Enter username</label>
+        <input type="Username" id="username"> 
+        <label for="passcode">Enter Passcode:</label>
+        <input type="password" id="passcode">
+        <br>
+        <button onclick="checkPasscode()">Log In</button>
+    </div>
+
+    <script>
+        function checkPasscode() {
+            var enteredPasscode = document.getElementById("passcode").value;
+
+            // Replace "mcoyhackers" with your desired passcode
+
+            if (enteredPasscode === "mcoyhackers") {
+                alert("Login Successful!");
+                // Redirect to the profile page or perform other actions
+            window.location.href="index.html";
+              }
+             else {
+                alert("Incorrect Passcode. Try again.");
+            }
+        }
+    </script>
